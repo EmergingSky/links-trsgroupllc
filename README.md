@@ -10,12 +10,7 @@ and the tag disappears.
 
 | data-todo | What it should point to |
 |---|---|
-| `discovery-call` | $20 Business Discovery Call booking page |
 | `free-checklist` | Shared Living Home Launch Checklist opt-in |
-| `birthday-bundle` | $39 mini bundle payment link (remove the whole button after Sun, Nov 15, 2026) |
-| `nursepreneur-session` | $147 NursePreneur Strategy Session |
-| `real-estate-session` | $247 Real Estate Acquisition Strategy Session |
-| `starter-kit` | Shared Living Starter Kit ($147) |
 | `wellness-inquiry` | Rae Sky Wellness inquiry form |
 | `facebook`, `instagram`, `tiktok`, `linkedin` | Profile URLs |
 
