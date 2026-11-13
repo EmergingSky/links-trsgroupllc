@@ -9,22 +9,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/forms.css">
-  <title>Rae Sky Wellness Inquiry</title>
-  <meta name="description" content="Send an inquiry to Rae Sky Wellness &amp; Concierge Nursing: nurse-led wellness education from Chelsea S. Williams, RN.">
+  <title>Request Concierge Nursing</title>
+  <meta name="description" content="Request concierge nursing from Rae Sky Wellness &amp; Concierge Nursing: personal RN visits from Chelsea S. Williams, RN in Shreveport, LA.">
 </head>
 <body class="well">
   <header class="hero">
     <div class="wrap">
       <a class="back" href="/">&larr; All links</a><br>
       <span class="kicker">Rae Sky Wellness &amp; Concierge Nursing</span>
-      <h1>Send an inquiry</h1>
-      <p>Nurse-led wellness education from a critical care RN with 10+ years at the bedside. Services are being finalized. Tell me what you're interested in and you'll hear first.</p>
+      <h1>Request concierge nursing</h1>
+      <p>Personal, unhurried nursing from a critical care RN with 10+ years at the bedside. Tell me what you or your loved one needs and I'll reach out to talk through next steps.</p>
     </div>
   </header>
   <main class="wrap">
     <div class="card">
       <h2>How can I help?</h2>
-      <p>Please don't include personal health details here. I'll reply by email or phone within 2 business days.</p>
+      <p>Share only the basics here. We'll go over health details privately when we talk. I'll reply by email or phone within 2 business days.</p>
       <form name="wellness-inquiry" method="POST" action="/wellness/thanks/" data-netlify="true" netlify-honeypot="company-website">
         <input type="hidden" name="form-name" value="wellness-inquiry">
         <p class="hidden"><label>Leave this empty <input name="company-website"></label></p>
@@ -37,22 +37,25 @@
         <label for="who">I'm reaching out as</label>
         <select id="who" name="reaching-out-as" required>
           <option value="">Choose one</option>
-          <option>An individual</option>
-          <option>A family member</option>
+          <option>Requesting for myself</option>
+          <option>A family member or caregiver</option>
+          <option>A case manager or healthcare professional</option>
           <option>A church, community group or employer</option>
           <option>A business or organization</option>
-          <option>A nurse or healthcare professional</option>
-          <option>Other</option>
+                    <option>Other</option>
         </select>
         <fieldset>
           <span class="legend">I'm interested in <span class="opt">(choose any)</span></span>
-          <label class="choice"><input type="checkbox" name="interest" value="Wellness education"> Wellness education and simple healthy habits</label>
-          <label class="choice"><input type="checkbox" name="interest" value="Group talk or workshop"> A wellness talk or workshop for my group</label>
-          <label class="choice"><input type="checkbox" name="interest" value="Nurse consulting for organizations"> Nurse consulting for a business or organization</label>
-          <label class="choice"><input type="checkbox" name="interest" value="Updates when services open"> Updates when new services open</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Concierge RN visits and wellness checks"> Concierge RN visits and wellness checks</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Post-discharge support and care coordination"> Post-discharge support and care coordination</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Medication review and education"> Medication review and education</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Personalized care plans"> Personalized care plans</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Wellness talk or workshop for a group"> A wellness talk or workshop for my group</label>
         </fieldset>
-        <label for="message">Your question or message</label>
+        <label for="message">What would you like help with?</label>
         <textarea id="message" name="message" required></textarea>
+        <label for="area">City or area <span class="opt">(optional)</span></label>
+        <input id="area" type="text" name="city-or-area" placeholder="Shreveport, Bossier City...">
         <label for="contact-pref">Best way to reach you</label>
         <select id="contact-pref" name="contact-preference">
           <option>Email</option>
@@ -60,11 +63,11 @@
           <option>Text</option>
         </select>
         <div class="consent">
-          <label class="choice"><input type="checkbox" name="understands" value="yes" required> I understand this form is for education and general questions only. It is not for medical advice or urgent needs, and sending it does not start a nurse-patient relationship.</label>
+          <label class="choice"><input type="checkbox" name="understands" value="yes" required> I understand this form is a request, not for urgent needs. Sending it does not start nursing services; those begin after we talk and agree on a plan.</label>
         </div>
-        <button type="submit">Send my inquiry</button>
+        <button type="submit">Request concierge nursing</button>
       </form>
-      <p class="note">Educational, not medical advice. This does not replace your physician or other healthcare provider. In an emergency, call 911.</p>
+      <p class="note">Services are provided personally by Chelsea S. Williams, RN, within her Louisiana nursing license, alongside your physician, not in place of them. Not for emergencies. In an emergency, call 911.</p>
     </div>
   </main>
   <footer class="wrap">
