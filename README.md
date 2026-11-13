@@ -18,12 +18,12 @@ and the tag disappears.
 | `starter-kit` | Shared Living Starter Kit ($147 founding price) |
 | `wellness-inquiry` | Rae Sky Wellness inquiry form |
 | `facebook`, `instagram`, `tiktok`, `linkedin` | Profile URLs |
-| `email`, `email-text` | `mailto:` your email (also replace the shown address) |
-| `phone` | `tel:+1318...` (also replace the shown number) |
 
 TRS Residential links to https://residential.trsgroupllc.com/.
 
-Photo: replace `assets/headshot.svg` with a square headshot (600x600 JPG works well) and update the `src` in `index.html`.
+Photo: `assets/headshot.jpg` is cropped from the brand flyer. Replace it with a higher-resolution original when you have one.
+
+Contact details (318-200-0780, admin@trsgroupllc.com, residential@trsgroupllc.com, 333 Texas Street, Suite 1300) come from the brand flyer and TRS referral guide.
 
 ## Compliance notes
 
