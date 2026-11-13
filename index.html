@@ -131,6 +131,9 @@
     .btn-special { background: #fff; color: var(--navy); border: 2px solid var(--gold); box-shadow: 0 4px 14px rgba(201,162,75,.25); }
     .btn-special .price s { color: var(--muted); font-weight: 400; margin-right: 4px; }
     #start-here { margin-top: 20px; }
+    .svc { list-style: none; margin: 0 0 14px; padding: 0; }
+    .svc li { position: relative; padding: 4px 0 4px 26px; color: var(--ink); }
+    .svc li::before { content: ""; position: absolute; left: 4px; top: 12px; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); }
     .contact { text-align: center; margin: 8px 0 0; font-weight: 600; color: var(--navy); }
     .contact a { text-decoration: none; display: inline-block; padding: 6px 4px; }
     .contact span { color: var(--gold); margin: 0 4px; }
@@ -295,24 +298,30 @@
     </section>
 
     <!-- RAE SKY WELLNESS & CONCIERGE NURSING
-         NEEDS CONFIRMATION: education and inquiries only until LSBN (scope and advertising) and LDH answer in writing.
-         Do not add private-duty nursing, in-home care or wellness checks here before then. -->
+         Compliance hold lifted Nov 13, 2026: Chelsea reports LSBN confirmed by email, and LDH rules allow it as a solo RN
+         (no hired caregivers, no 1099 contractors). Keep her LSBN email on file. Services are hers alone; keep TRS separate. -->
     <section class="biz" id="rae-sky-wellness">
       <div class="biz-head">
         <div class="biz-mark" aria-hidden="true">RW</div>
         <div>
-          <p class="kicker">Nurse-Led Wellness Education</p>
+          <p class="kicker">Concierge Nursing &middot; Shreveport-Bossier</p>
           <h2>Rae Sky Wellness &amp; Concierge Nursing</h2>
         </div>
       </div>
-      <p>Wellness education from a critical care RN with 10+ years at the bedside. Services are being finalized. Send an inquiry to hear first.</p>
+      <p>Private-pay, one-on-one nursing from a critical care RN with 10+ years at the bedside. I come to you.</p>
+      <ul class="svc">
+        <li>Concierge RN visits and wellness checks</li>
+        <li>Post-discharge support and care coordination</li>
+        <li>Medication review and education</li>
+        <li>Personalized care plans</li>
+      </ul>
 
-      <!-- Wellness inquiry: Netlify form at /wellness/ -->
-      <a class="btn btn-line" href="/wellness/">
-        <span>Send an Inquiry<span class="sub">Questions and early updates</span></span>
+      <!-- Wellness inquiry: Netlify form at /wellness/ (owned by the forms thread) -->
+      <a class="btn btn-navy" href="/wellness/">
+        <span>Request Concierge Nursing<span class="sub">Tell me what you need and I&rsquo;ll follow up</span></span>
         <span class="price" aria-hidden="true">&rarr;</span>
       </a>
-      <p class="note">Educational, not medical advice. This does not replace your physician or other healthcare provider. In an emergency, call 911.</p>
+      <p class="note">Services are provided personally by Chelsea S. Williams, RN, within the scope of her Louisiana RN license, and work alongside your physician, not in place of them. Not for emergencies: call 911.</p>
     </section>
 
     <!-- MENTORSHIPS -->

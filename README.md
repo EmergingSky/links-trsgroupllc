@@ -22,8 +22,8 @@ Contact details (318-200-0780, admin@trsgroupllc.com, residential@trsgroupllc.co
 
 - TRS Residential is described as housing only, with the no-medical-care disclaimer.
 - Footer names Emerging Sky Holdings, LLC as the parent, per the playbook.
-- Rae Sky Wellness copy is education and inquiries only. **Needs confirmation** with the
-  Louisiana State Board of Nursing before any hands-on care is marketed.
+- Rae Sky Wellness: concierge RN services listed as of Nov 13, 2026, after Chelsea's LSBN email confirmation
+  and her LDH review (solo RN only: no hired caregivers or 1099 contractors). Keep that email on file.
 - No income or outcome promises anywhere on the page.
 
 ## Deploy (Netlify)
