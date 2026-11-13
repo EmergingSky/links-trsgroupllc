@@ -15,7 +15,7 @@ and the tag disappears.
 | `birthday-bundle` | $39 mini bundle payment link (remove the whole button after Sun, Nov 15, 2026) |
 | `nursepreneur-session` | $147 NursePreneur Strategy Session |
 | `real-estate-session` | $247 Real Estate Acquisition Strategy Session |
-| `starter-kit` | Shared Living Starter Kit ($147 founding price) |
+| `starter-kit` | Shared Living Starter Kit ($147) |
 | `wellness-inquiry` | Rae Sky Wellness inquiry form |
 | `facebook`, `instagram`, `tiktok`, `linkedin` | Profile URLs |
 
