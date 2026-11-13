@@ -128,6 +128,12 @@
     .btn-line { background: #fff; color: var(--navy); border: 1.5px solid var(--line); }
     .btn-line:hover { border-color: var(--gold); }
     .btn + .btn { margin-top: 10px; }
+    .btn-special { background: #fff; color: var(--navy); border: 2px solid var(--gold); box-shadow: 0 4px 14px rgba(201,162,75,.25); }
+    .btn-special .price s { color: var(--muted); font-weight: 400; margin-right: 4px; }
+    #start-here { margin-top: 20px; }
+    .contact { text-align: center; margin: 8px 0 0; font-weight: 600; color: var(--navy); }
+    .contact a { text-decoration: none; display: inline-block; padding: 6px 4px; }
+    .contact span { color: var(--gold); margin: 0 4px; }
 
     /* Sections */
     section.biz { margin-top: 28px; }
@@ -195,6 +201,7 @@
       font: 700 10px/1 "Source Sans 3", sans-serif; letter-spacing: .06em;
       padding: 3px 6px; border-radius: 4px;
     }
+    .contact a[data-todo]::after { top: -12px; right: -4px; }
     .social a[data-todo]::after { top: -6px; right: -6px; content: "!"; padding: 3px 5px; }
   </style>
 </head>
@@ -208,9 +215,8 @@
         <img src="assets/headshot.svg" alt="Chelsea S. Williams, RN" width="132" height="132">
       </div>
       <h1>Chelsea S. Williams, RN</h1>
-      <p class="role">Critical Care Nurse &middot; Real Estate Investor &middot; Founder</p>
-      <p class="place">Shreveport, Louisiana</p>
-      <p class="tagline">Multiple Businesses. One Greater Purpose.</p>
+      <p class="role">Nurse. Investor. Builder of homes and businesses in Shreveport.</p>
+      <p class="tagline" style="margin-top:14px">Multiple Businesses. One Greater Purpose.</p>
     </div>
   </header>
 
@@ -218,13 +224,28 @@
 
     <div class="cta-card">
       <h2>Not sure where to start?</h2>
-      <p>Book a 30-minute Business Discovery Call. Your $20 is credited toward a session or kit if you book within 24 hours.</p>
+      <p>Book a 30-minute Business Discovery Call. Your $20 is credited toward a kit or session if you book within 24 hours.</p>
       <!-- PLACEHOLDER LINK: Discovery Call booking page -->
       <a class="btn btn-gold" href="#" data-todo="discovery-call">
         <span>Book a Discovery Call<span class="sub">30 minutes &middot; Zoom or phone</span></span>
         <span class="price">$20</span>
       </a>
     </div>
+
+    <!-- START HERE: free checklist + birthday special -->
+    <section class="biz" id="start-here">
+      <!-- PLACEHOLDER LINK: free checklist opt-in page -->
+      <a class="btn btn-line" href="#" data-todo="free-checklist">
+        <span>Free: Shared Living Home Launch Checklist<span class="sub">Instant download</span></span>
+        <span class="price">Free</span>
+      </a>
+      <!-- BIRTHDAY SPECIAL: remove this whole link after Sunday, Nov 15, 2026.
+           PLACEHOLDER LINK: $39 mini bundle payment link -->
+      <a class="btn btn-special" href="#" data-todo="birthday-bundle">
+        <span>Birthday Special: Mini Bundle<span class="sub">House Rules template + resident onboarding checklist &middot; 39 spots, ends Sun, Nov 15</span></span>
+        <span class="price"><s>$97</s> $39</span>
+      </a>
+    </section>
 
     <!-- THE RAE SKY GROUP -->
     <section class="biz" id="rae-sky-group">
@@ -237,22 +258,22 @@
       </div>
       <p>NursePreneur: From Scrubs to CEO. Real estate, creative finance, shared independent living setup, and business strategy for nurses and small business owners.</p>
 
-      <!-- PLACEHOLDER LINK: NursePreneur Strategy Session booking -->
+      <!-- PLACEHOLDER LINK: NursePreneur Strategy Session payment/booking -->
       <a class="btn btn-navy" href="#" data-todo="nursepreneur-session">
-        <span>NursePreneur Strategy Session<span class="sub">60 minutes, one on one</span></span>
+        <span>NursePreneur Strategy Session<span class="sub">From Scrubs to CEO &middot; 60 minutes</span></span>
         <span class="price">$147</span>
       </a>
-      <!-- PLACEHOLDER LINK: Real Estate Acquisition Strategy Session booking -->
+      <!-- PLACEHOLDER LINK: Real Estate Acquisition Strategy Session payment/booking -->
       <a class="btn btn-navy" href="#" data-todo="real-estate-session">
-        <span>Real Estate Acquisition Strategy<span class="sub">90 minutes &middot; creative finance</span></span>
+        <span>Real Estate Acquisition Strategy<span class="sub">Creative finance &middot; 90 minutes</span></span>
         <span class="price">$247</span>
       </a>
-      <!-- PLACEHOLDER LINK: Shared living setup coaching inquiry form -->
-      <a class="btn btn-line" href="#" data-todo="shared-living-coaching">
-        <span>Shared Living Setup Coaching<span class="sub">Onboarding documents, house rules, marketing</span></span>
-        <span class="price" aria-hidden="true">&rarr;</span>
+      <!-- PLACEHOLDER LINK: Shared Living Starter Kit (founding price $147 per playbook section 11) -->
+      <a class="btn btn-navy" href="#" data-todo="starter-kit">
+        <span>Shared Living Starter Kit<span class="sub">Onboarding packet, house rules, intake forms, referral scripts</span></span>
+        <span class="price">$147</span>
       </a>
-      <p class="note">Coaching and education only. Results vary, and no income or investment outcome is promised.</p>
+      <p class="note">Advice and education, not guarantees. Results shared here are my own and yours will vary. No promise of a property, financing, license or filled beds.</p>
     </section>
 
     <!-- TRS RESIDENTIAL -->
@@ -264,48 +285,41 @@
           <h2>TRS Residential</h2>
         </div>
       </div>
-      <p>Safe, affordable shared independent living homes. Furnished rooms, a respectful household, and a place to call home.</p>
+      <p>Affordable, furnished shared independent living homes. For referral partners and families looking for a room.</p>
 
-      <!-- PLACEHOLDER LINK: confirm the TRS Residential site URL (assumed https://trsgroupllc.com/) and remove data-todo -->
-      <a class="btn btn-navy" href="https://trsgroupllc.com/" data-todo="trs-site">
-        <span>Visit TRS Residential<span class="sub">Rooms, pricing and house details</span></span>
+      <a class="btn btn-navy" href="https://residential.trsgroupllc.com/">
+        <span>Refer Someone or Check Availability<span class="sub">Case managers, families and referral partners</span></span>
         <span class="price" aria-hidden="true">&rarr;</span>
       </a>
-      <!-- PLACEHOLDER LINK: referral / room inquiry form -->
-      <a class="btn btn-line" href="#" data-todo="trs-referral">
-        <span>Refer a Resident or Check Availability<span class="sub">For case managers, families and referral partners</span></span>
-        <span class="price" aria-hidden="true">&rarr;</span>
-      </a>
-      <p class="note">TRS Residential provides housing only. It does not provide medical or personal care. Any care services are arranged separately by the resident with a provider of their choosing.</p>
+      <p class="note">TRS Residential provides housing only. It does not provide medical or personal care. Residents are free to choose any outside provider.</p>
     </section>
 
     <!-- RAE SKY WELLNESS & CONCIERGE NURSING
-         NEEDS CONFIRMATION: wording below is consulting/education only. Confirm with the Louisiana State Board of Nursing
-         (and LDH if any in-home service is added) before marketing any hands-on care. -->
+         NEEDS CONFIRMATION: education and inquiries only until LSBN (scope and advertising) and LDH answer in writing.
+         Do not add private-duty nursing, in-home care or wellness checks here before then. -->
     <section class="biz" id="rae-sky-wellness">
       <div class="biz-head">
         <div class="biz-mark" aria-hidden="true">RW</div>
         <div>
-          <p class="kicker">Nurse-Led Consulting</p>
+          <p class="kicker">Nurse-Led Wellness Education</p>
           <h2>Rae Sky Wellness &amp; Concierge Nursing</h2>
         </div>
       </div>
-      <p>Nurse consulting from a critical care RN with 10+ years at the bedside. Help understanding your options, preparing for appointments, and organizing your health information.</p>
+      <p>Wellness education from a critical care RN with 10+ years at the bedside. Services are being finalized. Send an inquiry to hear first.</p>
 
-      <!-- PLACEHOLDER LINK: Wellness interest list / contact form -->
-      <a class="btn btn-line" href="#" data-todo="wellness-interest">
-        <span>Join the Interest List<span class="sub">Be first to hear about new services</span></span>
+      <!-- PLACEHOLDER LINK: Rae Sky Wellness inquiry form -->
+      <a class="btn btn-line" href="#" data-todo="wellness-inquiry">
+        <span>Send an Inquiry<span class="sub">Questions and early updates</span></span>
         <span class="price" aria-hidden="true">&rarr;</span>
       </a>
-      <p class="note">Educational and consultative services only. This is not medical advice, diagnosis or treatment, and it does not replace your physician or other healthcare provider. In an emergency, call 911.</p>
+      <p class="note">Educational, not medical advice. This does not replace your physician or other healthcare provider. In an emergency, call 911.</p>
     </section>
 
     <!-- MENTORSHIPS -->
     <section class="proof" id="trained-with">
       <h2>Trained &amp; Mentored By</h2>
-      <p>Years of learning, applied in real deals right here in Shreveport.</p>
+      <p>Four mentorships completed, and a shared living home running right now.</p>
       <ol>
-        <!-- NEEDS CONFIRMATION: year for Road to the Closing Table (project notes say both 2021 and January 2022) -->
         <li><span class="when">Jan 2022</span><span class="what">Road to the Closing Table<span class="who">Henry Washington</span></span></li>
         <li><span class="when">Jan 2025</span><span class="what">Investors Circle<span class="who">Terrica Lynn Smith &middot; completed with high honors</span></span></li>
         <li><span class="when">Dec 2025</span><span class="what">Build A Builder&rsquo;s Academy<span class="who">New construction &amp; development</span></span></li>
@@ -324,14 +338,25 @@
       <a href="#" data-todo="tiktok" aria-label="TikTok">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h-3.3v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.2a6.2 6.2 0 1 0 5.3 6.2V8.6a7.9 7.9 0 0 0 4.6 1.5V6.8A4.6 4.6 0 0 1 16.6 2z"/></svg>
       </a>
+      <a href="#" data-todo="linkedin" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3V9.5zm6.5 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4V9.5z"/></svg>
+      </a>
       <a href="#" data-todo="email" aria-label="Email">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4 7.3V17h16V7.3l-8 4.9zM4.6 7h14.8L12 11.5 4.6 7z"/></svg>
       </a>
     </nav>
 
+    <!-- PLACEHOLDER CONTACT: real phone number and email (playbook: both visible on every page) -->
+    <p class="contact">
+      <a href="#" data-todo="phone">(318) 000-0000</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="#" data-todo="email-text">hello@trsgroupllc.com</a>
+    </p>
+
     <footer>
       <p><strong>Purpose-built. Care-driven.</strong></p>
-      <p>&copy; 2026 The Rae Sky Group, LLC &middot; TRS Residential, LLC &middot; Rae Sky Wellness &amp; Concierge Nursing</p>
+      <p>The Rae Sky Group, TRS Residential and Rae Sky Wellness are companies of Emerging Sky Holdings, LLC.</p>
+      <p>&copy; 2026 Chelsea S. Williams, RN</p>
     </footer>
   </main>
 
