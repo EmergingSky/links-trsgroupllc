@@ -10,8 +10,6 @@ and the tag disappears.
 
 | data-todo | What it should point to |
 |---|---|
-| `free-checklist` | Shared Living Home Launch Checklist opt-in |
-| `wellness-inquiry` | Rae Sky Wellness inquiry form |
 | `facebook`, `instagram`, `tiktok`, `linkedin` | Profile URLs |
 
 TRS Residential links to https://residential.trsgroupllc.com/.
@@ -32,3 +30,11 @@ Contact details (318-200-0780, admin@trsgroupllc.com, residential@trsgroupllc.co
 
 Netlify → Add new site → Import from Git → pick this repo. Build command: none. Publish directory: `.`
 Then Domain management → Add a domain → `links.trsgroupllc.com`.
+
+## Forms (Netlify Forms)
+
+- `/checklist/` free checklist opt-in (form `checklist-optin`) -> `/checklist/thanks/` with the PDF in `/downloads/`
+- `/wellness/` Rae Sky Wellness inquiry (form `wellness-inquiry`) -> `/wellness/thanks/`
+
+After the first deploy: Site configuration > Forms > Enable form detection, then redeploy once.
+Then Forms > Form notifications > Add notification > Email > admin@trsgroupllc.com for each form.

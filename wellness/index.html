@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B1F3A">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/forms.css">
+  <title>Rae Sky Wellness Inquiry</title>
+  <meta name="description" content="Send an inquiry to Rae Sky Wellness &amp; Concierge Nursing: nurse-led wellness education from Chelsea S. Williams, RN.">
+</head>
+<body class="well">
+  <header class="hero">
+    <div class="wrap">
+      <a class="back" href="/">&larr; All links</a><br>
+      <span class="kicker">Rae Sky Wellness &amp; Concierge Nursing</span>
+      <h1>Send an inquiry</h1>
+      <p>Nurse-led wellness education from a critical care RN with 10+ years at the bedside. Services are being finalized. Tell me what you're interested in and you'll hear first.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="card">
+      <h2>How can I help?</h2>
+      <p>Please don't include personal health details here. I'll reply by email or phone within 2 business days.</p>
+      <form name="wellness-inquiry" method="POST" action="/wellness/thanks/" data-netlify="true" netlify-honeypot="company-website">
+        <input type="hidden" name="form-name" value="wellness-inquiry">
+        <p class="hidden"><label>Leave this empty <input name="company-website"></label></p>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" autocomplete="name" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" autocomplete="email" required>
+        <label for="phone">Phone <span class="opt">(optional)</span></label>
+        <input id="phone" type="tel" name="phone" autocomplete="tel">
+        <label for="who">I'm reaching out as</label>
+        <select id="who" name="reaching-out-as" required>
+          <option value="">Choose one</option>
+          <option>An individual</option>
+          <option>A family member</option>
+          <option>A church, community group or employer</option>
+          <option>A business or organization</option>
+          <option>A nurse or healthcare professional</option>
+          <option>Other</option>
+        </select>
+        <fieldset>
+          <span class="legend">I'm interested in <span class="opt">(choose any)</span></span>
+          <label class="choice"><input type="checkbox" name="interest" value="Wellness education"> Wellness education and simple healthy habits</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Group talk or workshop"> A wellness talk or workshop for my group</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Nurse consulting for organizations"> Nurse consulting for a business or organization</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Updates when services open"> Updates when new services open</label>
+        </fieldset>
+        <label for="message">Your question or message</label>
+        <textarea id="message" name="message" required></textarea>
+        <label for="contact-pref">Best way to reach you</label>
+        <select id="contact-pref" name="contact-preference">
+          <option>Email</option>
+          <option>Phone call</option>
+          <option>Text</option>
+        </select>
+        <div class="consent">
+          <label class="choice"><input type="checkbox" name="understands" value="yes" required> I understand this form is for education and general questions only. It is not for medical advice or urgent needs, and sending it does not start a nurse-patient relationship.</label>
+        </div>
+        <button type="submit">Send my inquiry</button>
+      </form>
+      <p class="note">Educational, not medical advice. This does not replace your physician or other healthcare provider. In an emergency, call 911.</p>
+    </div>
+  </main>
+  <footer class="wrap">
+    <p><a href="tel:+13182000780">318-200-0780</a> &middot; <a href="mailto:admin@trsgroupllc.com">admin@trsgroupllc.com</a></p>
+    <p>The Rae Sky Group, TRS Residential and Rae Sky Wellness are companies of Emerging Sky Holdings, LLC.</p>
+    <p>333 Texas Street, Suite 1300, Shreveport, LA 71101</p>
+  </footer>
+</body>
+</html>
