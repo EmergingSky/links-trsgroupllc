@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B1F3A">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/forms.css">
+  <title>You're Enrolled</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    .steps { list-style: none; counter-reset: s; margin: 0 0 8px; padding: 0; }
+    .steps li { counter-increment: s; position: relative; padding: 0 0 16px 44px; }
+    .steps li::before { content: counter(s); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: #0B1F3A; color: #C9A24B; font-weight: 700; display: grid; place-items: center; }
+    .steps strong { display: block; color: #0B1F3A; }
+  </style>
+</head>
+<body>
+  <!-- Stripe $1,000 coaching payment link redirects here after payment:
+       Payment Links > Edit > After payment > Don't show confirmation page > https://links.trsgroupllc.com/coaching/welcome/ -->
+  <header class="hero">
+    <div class="wrap">
+      <span class="kicker">Welcome!</span>
+      <h1>You&rsquo;re enrolled in Shared Living Home Launch</h1>
+      <p>Thank you for trusting me with your launch. Over the next 6 weeks we&rsquo;ll go from &ldquo;I want to open a home&rdquo; to a complete plan.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="card">
+      <h2>What happens next</h2>
+      <ol class="steps">
+        <li><strong>Watch your email</strong>Within 1 business day I&rsquo;ll send your coaching agreement, your intake form and a link to book Session 1. Check your spam folder for <a href="mailto:admin@trsgroupllc.com">admin@trsgroupllc.com</a>.</li>
+        <li><strong>Download your Starter Kit</strong>It&rsquo;s included in your program. Start reading Part 1 before our first session.</li>
+        <li><strong>Gather your numbers</strong>Your city and parish, any property you&rsquo;re looking at, and how much you have set aside to start. We&rsquo;ll put them into your Startup Budget Calculator and Property Deal Analyzer, which I&rsquo;ll share with you before Session 1.</li>
+        <li><strong>Hold off on signing anything</strong>Don&rsquo;t sign a lease or purchase contract until we&rsquo;ve finished the Week 1 compliance steps together.</li>
+      </ol>
+      <a class="btn btn-gold" href="/kit/thanks/">Get your Starter Kit</a>
+      <p class="small" style="margin-top:14px">Questions? Text or call <a href="tel:+13182000780">318-200-0780</a> or email <a href="mailto:admin@trsgroupllc.com">admin@trsgroupllc.com</a>. Keep your Stripe receipt for your records.</p>
+      <p class="small">Coaching is education, not legal, tax or financial advice. Confirm licensing, zoning and lease questions with the agency or an attorney. No guarantee of a property, financing or filled beds.</p>
+    </div>
+  </main>
+  <footer class="wrap">
+    <p><a href="tel:+13182000780">318-200-0780</a> &middot; <a href="mailto:admin@trsgroupllc.com">admin@trsgroupllc.com</a></p>
+    <p>The Rae Sky Group, TRS Residential and Rae Sky Wellness are companies of Emerging Sky Holdings, LLC.</p>
+    <p>333 Texas Street, Suite 1300, Shreveport, LA 71101</p>
+  </footer>
+</body>
+</html>
