@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B1F3A">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/forms.css">
+  <title>Shared Living Home Launch Checklist</title>
+  <meta name="description" content="Free checklist from Chelsea S. Williams, RN: the step-by-step order she followed to open her own shared living home in Shreveport.">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <a class="back" href="/">&larr; All links</a><br>
+      <span class="kicker">Free checklist</span>
+      <h1>Shared Living Home Launch Checklist</h1>
+      <p>The order I followed to open my own shared living home in Shreveport, boiled down to the decisions that matter most.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="card">
+      <h2>Get your free copy</h2>
+      <p>Tell me where to send it and you can download it right away.</p>
+      <ul class="inside">
+        <li>Know your numbers before you sign anything</li>
+        <li>Choose and set up the house</li>
+        <li>Business setup and the questions to ask in writing</li>
+        <li>House rules and resident intake</li>
+        <li>Referral sources and your first residents</li>
+        <li>Opening week</li>
+      </ul>
+      <form name="checklist-optin" method="POST" action="/checklist/thanks/" data-netlify="true" netlify-honeypot="company-website">
+        <input type="hidden" name="form-name" value="checklist-optin">
+        <p class="hidden"><label>Leave this empty <input name="company-website"></label></p>
+        <label for="first-name">First name</label>
+        <input id="first-name" type="text" name="first-name" autocomplete="given-name" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" autocomplete="email" required>
+        <label for="stage">Where are you right now? <span class="opt">(optional)</span></label>
+        <select id="stage" name="stage">
+          <option value="">Choose one</option>
+          <option>Just exploring the idea</option>
+          <option>Running numbers or looking for a house</option>
+          <option>I have a house and I'm getting ready to open</option>
+          <option>Already open and want to grow</option>
+        </select>
+        <div class="consent">
+          <label class="choice"><input type="checkbox" name="email-consent" value="yes" required> Send me the checklist and a few follow-up emails with tips and offers from The Rae Sky Group. I can unsubscribe anytime.</label>
+        </div>
+        <button type="submit">Send me the checklist</button>
+      </form>
+      <p class="note">Education only. This checklist shares how my own home operates. It is not legal, tax or licensing advice, and it does not guarantee results.</p>
+    </div>
+  </main>
+  <footer class="wrap">
+    <p><a href="tel:+13182000780">318-200-0780</a> &middot; <a href="mailto:admin@trsgroupllc.com">admin@trsgroupllc.com</a></p>
+    <p>The Rae Sky Group, TRS Residential and Rae Sky Wellness are companies of Emerging Sky Holdings, LLC.</p>
+    <p>333 Texas Street, Suite 1300, Shreveport, LA 71101</p>
+  </footer>
+</body>
+</html>
