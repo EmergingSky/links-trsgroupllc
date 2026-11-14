@@ -131,6 +131,23 @@
     .btn-special { background: #fff; color: var(--navy); border: 2px solid var(--gold); box-shadow: 0 4px 14px rgba(201,162,75,.25); }
     .btn-special .price s { color: var(--muted); font-weight: 400; margin-right: 4px; }
     #start-here { margin-top: 20px; }
+    .coach {
+      background: #fff;
+      border: 2px solid var(--gold);
+      border-radius: var(--radius);
+      box-shadow: 0 6px 18px rgba(201,162,75,.22);
+      padding: 18px 18px 16px;
+      margin: 0 0 12px;
+    }
+    .coach .tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--navy); background: var(--gold-soft); border-radius: 999px; padding: 4px 10px; margin-bottom: 8px; }
+    .coach h3 { font-family: "Playfair Display", Georgia, serif; font-size: 20px; line-height: 1.2; margin: 0 0 4px; color: var(--navy); }
+    .coach .meta { margin: 0 0 10px; color: var(--muted); font-size: 15px; }
+    .coach .svc { margin-bottom: 12px; }
+    .coach .svc li { font-size: 15px; padding: 3px 0 3px 24px; }
+    .coach .svc li::before { top: 10px; }
+    .coach .cost { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin: 0 0 12px; color: var(--navy); }
+    .coach .cost strong { font-size: 24px; }
+    .coach .cost span { color: var(--muted); font-size: 14px; }
     .svc { list-style: none; margin: 0 0 14px; padding: 0; }
     .svc li { position: relative; padding: 4px 0 4px 26px; color: var(--ink); }
     .svc li::before { content: ""; position: absolute; left: 4px; top: 12px; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); }
@@ -263,6 +280,27 @@
       </div>
       <p>NursePreneur: From Scrubs to CEO. Real estate, creative finance, shared independent living setup, and business strategy for nurses and small business owners.</p>
 
+      <!-- 1:1 COACHING: Shared Living Home Launch (6 weeks).
+           Intro price $1,000 or 4 x $250; raise to $2,500 after the first client's written testimonial.
+           Button goes to the $20 Discovery Call booking (Chelsea's choice, Nov 14, 2026). Swap to an application
+           form or Stripe payment link later if wanted. -->
+      <div class="coach" id="coaching">
+        <span class="tag">New &middot; 1:1 Coaching</span>
+        <h3>Shared Living Home Launch</h3>
+        <p class="meta">6 weeks, one-on-one with Chelsea. Go from &ldquo;I want to open a home&rdquo; to a complete launch plan.</p>
+        <ul class="svc">
+          <li>Six 90-minute Zoom sessions plus a property walk-through</li>
+          <li>Text and voice support, Monday to Friday</li>
+          <li>Startup Budget Calculator and Property Deal Analyzer</li>
+          <li>Shared Living Starter Kit included ($147 value)</li>
+        </ul>
+        <p class="cost"><strong>$1,000</strong><span>or 4 payments of $250 &middot; introductory price</span></p>
+        <a class="btn btn-gold" href="https://calendar.app.google/2En7CKfPVDky85RFA">
+          <span>Apply: Book a Discovery Call<span class="sub">Start with a 30-minute call to see if it&rsquo;s a fit</span></span>
+          <span class="price">$20</span>
+        </a>
+      </div>
+
       <!-- NursePreneur session: Google Calendar booking -->
       <a class="btn btn-navy" href="https://calendar.app.google/VZcvy5XzCUi6HLfWA">
         <span>NursePreneur Strategy Session<span class="sub">From Scrubs to CEO &middot; 60 minutes</span></span>
@@ -278,7 +316,7 @@
         <span>Shared Living Starter Kit<span class="sub">Onboarding packet, house rules, intake forms, referral scripts</span></span>
         <span class="price">$147</span>
       </a>
-      <p class="note">Advice and education, not guarantees. Results shared here are my own and yours will vary. No promise of a property, financing, license or filled beds.</p>
+      <p class="note">Advice and education, not legal advice or guarantees. Results shared here are my own and yours will vary. No promise of a property, financing, license or filled beds. Coaching covers housing-only shared living, not licensed care homes.</p>
     </section>
 
     <!-- TRS RESIDENTIAL -->
