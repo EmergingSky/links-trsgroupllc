@@ -11,3 +11,8 @@
   for = "/bundle/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/kit/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
