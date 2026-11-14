@@ -34,6 +34,7 @@ Then Domain management → Add a domain → `links.trsgroupllc.com`.
 ## Forms (Netlify Forms)
 
 - `/checklist/` free checklist opt-in (form `checklist-optin`) -> `/checklist/thanks/` with the PDF in `/downloads/`
+- `/coaching/welcome/` (noindex) is where the $1,000 coaching Stripe link redirects after payment
 - `/wellness/` Rae Sky Wellness inquiry (form `wellness-inquiry`) -> `/wellness/thanks/`
 
 After the first deploy: Site configuration > Forms > Enable form detection, then redeploy once.

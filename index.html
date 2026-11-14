@@ -148,6 +148,8 @@
     .coach .cost { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin: 0 0 12px; color: var(--navy); }
     .coach .cost strong { font-size: 24px; }
     .coach .cost span { color: var(--muted); font-size: 14px; }
+    .coach .enroll { text-align: center; margin: 12px 0 0; font-size: 15px; color: var(--muted); }
+    .coach .enroll a { color: var(--navy); font-weight: 700; text-decoration-color: var(--gold); text-underline-offset: 3px; display: inline-block; padding: 6px 2px; }
     .svc { list-style: none; margin: 0 0 14px; padding: 0; }
     .svc li { position: relative; padding: 4px 0 4px 26px; color: var(--ink); }
     .svc li::before { content: ""; position: absolute; left: 4px; top: 12px; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); }
@@ -281,7 +283,7 @@
       <p>NursePreneur: From Scrubs to CEO. Real estate, creative finance, shared independent living setup, and business strategy for nurses and small business owners.</p>
 
       <!-- 1:1 COACHING: Shared Living Home Launch (6 weeks).
-           Intro price $1,000 or 4 x $250; raise to $2,500 after the first client's written testimonial.
+           Intro price $1,000 (Stripe link, pay-in-4 BNPL at checkout; redirects to /coaching/welcome/); raise to $2,500 after the first client's written testimonial.
            Button goes to the $20 Discovery Call booking (Chelsea's choice, Nov 14, 2026). Swap to an application
            form or Stripe payment link later if wanted. -->
       <div class="coach" id="coaching">
@@ -294,11 +296,13 @@
           <li>Startup Budget Calculator and Property Deal Analyzer</li>
           <li>Shared Living Starter Kit included ($147 value)</li>
         </ul>
-        <p class="cost"><strong>$1,000</strong><span>or 4 payments of $250 &middot; introductory price</span></p>
+        <p class="cost"><strong>$1,000</strong><span>introductory price &middot; pay in full or split into 4 payments at checkout</span></p>
         <a class="btn btn-gold" href="https://calendar.app.google/2En7CKfPVDky85RFA">
           <span>Apply: Book a Discovery Call<span class="sub">Start with a 30-minute call to see if it&rsquo;s a fit</span></span>
           <span class="price">$20</span>
         </a>
+        <!-- Coaching enrollment: Stripe $1,000 payment link (pay-in-4 at checkout), redirects to /coaching/welcome/ -->
+        <p class="enroll">Already had your call? <a href="https://buy.stripe.com/bJe28rb4Gcbz6lY9cV7g402">Enroll now &rarr;</a></p>
       </div>
 
       <!-- NursePreneur session: Google Calendar booking -->

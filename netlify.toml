@@ -16,3 +16,8 @@
   for = "/kit/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/coaching/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
